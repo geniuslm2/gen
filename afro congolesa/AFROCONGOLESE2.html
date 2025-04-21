@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFRO-CONGOLESA | Cabelo & Beleza de Luxo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    header {
+      background: #f98fb4;
+      color: #fff;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+    header p {
+      font-size: 1.2rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #ffd6e8;
+      padding: 1rem;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #c2185b;
+      font-weight: 500;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1601382261563-bb7b1c888226') no-repeat center/cover;
+      color: white;
+      padding: 6rem 2rem;
+      text-align: center;
+    }
+    .hero h2 {
+      font-size: 2.5rem;
+      background: rgba(0, 0, 0, 0.6);
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 4rem 2rem;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      color: #c2185b;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 100%;
+      height: 240px;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1rem;
+      text-align: center;
+    }
+    .card-body h4 {
+      font-size: 1.3rem;
+      margin-bottom: 0.5rem;
+      color: #c2185b;
+    }
+    .contact-info {
+      text-align: center;
+      font-size: 1.1rem;
+    }
+    footer {
+      background: #f98fb4;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: white;
+      border-radius: 50%;
+      padding: 16px;
+      font-size: 24px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      z-index: 1000;
+      transition: background-color 0.3s;
+    }
+    .whatsapp-float:hover {
+      background-color: #1ebd5a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AFRO-CONGOLESA</h1>
+    <p>Soluções de Cabelo e Beleza de Luxo em Angola</p>
+  </header>
+
+  <nav>
+    <a href="#services">Serviços</a>
+    <a href="#gallery">Galeria</a>
+    <a href="#contact">Contato</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Realce sua Beleza. Abrace sua Cultura.</h2>
+  </section>
+
+  <section id="services" class="section">
+    <h3>Nossos Serviços de Assinatura</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="HBD3.jpg" alt="Tranças de Luxo" />
+        <div class="card-body">
+          <h4>Tranças de Luxo</h4>
+          <p>Estilos de tranças tradicionais e modernos com cabelo de qualidade e técnica avançada.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="HBD2.jpg" alt="Cuidado & Estilo" />
+        <div class="card-body">
+          <h4>Cuidado Capilar & Estilo</h4>
+          <p>Revitalize sua beleza natural com tratamentos nutritivos e opções de estilização.</p>
+        </div>
+      </div>
+      <div class="card">
+        <img src="HBD1.jpg" alt="Maquiagem & Glamour" />
+        <div class="card-body">
+          <h4>Maquiagem & Glamour</h4>
+          <p>Looks naturais ou glamourosos – ideal para casamentos, sessões de fotos e eventos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section">
+    <h3>Galeria de Estilos</h3>
+    <div class="grid">
+      <div class="card">
+        <img src="mendes focus2.jpg" alt="Galeria 1" />
+      </div>
+      <div class="card">
+        <img src="loira2.jpg" alt="Galeria 2" />
+      </div>
+      <div class="card">
+        <img src="loira1.jpg" alt="Galeria 3" />
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Depoimentos de Clientes</h3>
+    <div class="grid">
+      <div class="card-body">
+        <p>"Excelente atendimento e resultado impecável! Amei minhas tranças."<br><strong>- Cláudia</strong></p>
+      </div>
+      <div class="card-body">
+        <p>"Serviço rápido, profissionais incríveis e ambiente acolhedor."<br><strong>- Joana</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h3>Marque Seu Atendimento</h3>
+    <div class="contact-info">
+      <p>Fale conosco pelo WhatsApp ou envie um e-mail para agendar seu horário.</p>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <h3>Contato</h3>
+    <div class="contact-info">
+      <p>📞 <a href="https://wa.me/244923456789" target="_blank" style="color: #c2185b; text-decoration: none;">+244 923 456 789</a></p>
+      <p>📍 Luanda, Angola</p>
+      <p>📧 <a href="mailto:reservas@afrocongolesa.com" style="color: #c2185b; text-decoration: none;">reservas@afrocongolesa.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 AFRO-CONGOLESA. Desenvolvido com paixão e cultura.</p>
+  </footer>
+
+  <a class="whatsapp-float" href="https://wa.me/244923456789" target="_blank" aria-label="Chat no WhatsApp">
+    💬
+  </a>
+</body>
+</html>
